@@ -1,5 +1,0 @@
-document.querySelectorAll()
-
-function handleCLick() {
-   
-}

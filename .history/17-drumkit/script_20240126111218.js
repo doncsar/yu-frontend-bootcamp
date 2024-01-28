@@ -1,5 +1,0 @@
-document.que
-
-function handleCLick() {
-   
-}
