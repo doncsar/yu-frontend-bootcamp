@@ -1,0 +1,10 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.big-title {
+   font-size: 10rem;
+   color: #f5e8a9;
+}
