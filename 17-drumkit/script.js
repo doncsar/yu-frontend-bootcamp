@@ -1,11 +1,9 @@
 const drums = document.querySelectorAll('.drum')
 
-function handleClick(buttonInnerHTML) {
-   if (buttonInnerHTML.type === 'click') {
-      buttonInnerHTML = this.innerHTML
-   }
+function makeSound(key) {
    let drumSound
-   switch (buttonInnerHTML) {
+
+   switch (key) {
       case 'w':
          drumSound = new Audio('resources/sounds/tom-1.mp3')
          break
@@ -38,10 +36,15 @@ function handleKeyDown(e) {
    const validKeys = ['w', 'a', 's', 'd', 'j', 'k', 'l']
 
    if (validKeys.includes(key)) {
-      handleClick(key)
+      makeSound(key)
    }
 }
 
 document.addEventListener('keydown', handleKeyDown)
 
-drums.forEach((drum) => drum.addEventListener('click', handleClick))
+drums.forEach((drum) =>
+   drum.addEventListener('click', function () {
+      const buttonInnerHTML = this.innerHTML
+      makeSound(buttonInnerHTML)
+   })
+)
