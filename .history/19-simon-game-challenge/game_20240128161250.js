@@ -1,3 +1,0 @@
-function nextSequence() {
-   let 
-}
