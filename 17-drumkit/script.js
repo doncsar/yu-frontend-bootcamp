@@ -29,6 +29,7 @@ function makeSound(key) {
          break
    }
    drumSound.play()
+   buttonHighlight(key)
 }
 
 function handleKeyDown(e) {
@@ -38,6 +39,14 @@ function handleKeyDown(e) {
    if (validKeys.includes(key)) {
       makeSound(key)
    }
+}
+
+function buttonHighlight(currentKey) {
+   const activeButton = document.querySelector(`.${currentKey}`)
+
+   activeButton.classList.add('pressed')
+
+   setTimeout(() => activeButton.classList.remove('pressed'), 500)
 }
 
 document.addEventListener('keydown', handleKeyDown)
