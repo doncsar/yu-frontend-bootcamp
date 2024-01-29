@@ -6,25 +6,26 @@ This cheat sheet provides a quick reference for commonly used Unix commands alon
 
 ## Table of Contents
 
-1. [pwd]()
-2. [ls]()
-3. [cd]()
-4. [mkdir]()
-5. [touch]()
-6. [cp]()
-7. [mv]()
-8. [rm]()
-9. [cat]()
-10.   [echo]()
-11.   [grep]()
-12.   [man]()
-13.   [chmod]()
-14.   [sudo]()
-15.   [exit]()
+1. [pwd](#pwd)
+2. [ls](#ls)
+3. [cd](#cd)
+4. [mkdir](#mkdir)
+5. [touch](#touch)
+6. [cp](#cp)
+7. [mv](#mv)
+8. [rm](#rm)
+9. [cat](#cat)
+10. [echo](#echo)
+11. [grep](#grep)
+12. [man](#man)
+13. [chmod](#chmod)
+14. [sudo](#sudo)
+15. [exit](#exit)
+
 
 ---
 
-## 1. pwd
+## 1. pwd {#pwd}
 
 ### Description:
 
@@ -36,7 +37,7 @@ Prints the current working directory.
 pwd
 ```
 
-## 2. ls
+## 2. ls {#ls}
 
 ### Description:
 
@@ -48,7 +49,7 @@ Lists directory contents.
 ls
 ```
 
-## 3. cd
+## 3. cd {#cd}
 
 ### Description:
 
