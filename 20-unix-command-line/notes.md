@@ -49,7 +49,7 @@ Lists directory contents.
 ls
 ```
 
-## 3. cd {#cd}
+## 3. cd <directory> {#cd}
 
 ### Description:
 
