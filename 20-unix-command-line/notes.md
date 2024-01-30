@@ -4,8 +4,78 @@ This cheat sheet provides a quick reference for commonly used Unix commands alon
 
 ---
 
+## Table of Contents
 
-## 1. pwd 
+1. [pwd](#1-pwd)
+2. [ls](#2-ls)
+3. [cd](#3-cd)
+4. [mkdir](#4-mkdir)
+5. [touch](#5-touch)
+6. [cp](#6-cp)
+7. [mv](#7-mv)
+8. [rm](#8-rm)
+9. [cat](#9-cat)
+10. [echo](#10-echo)
+11. [grep](#11-grep)
+12. [man](#12-man)
+13. [chmod](#13-chmod)
+14. [sudo](#14-sudo)
+15. [exit](#15-exit)
+
+
+
+---
+
+## 1. pwd - [Unix Commands Cheat Sheet](#unix-commands-cheat-sheet)
+- [Unix Commands Cheat Sheet](#unix-commands-cheat-sheet)
+  - [Table of Contents](#table-of-contents)
+  - [1. pwd - Unix Commands Cheat Sheet](#1-pwd---unix-commands-cheat-sheet)
+    - [Description:](#description)
+    - [Usage:](#usage)
+  - [2. ls](#2-ls)
+    - [Description:](#description-1)
+    - [Usage:](#usage-1)
+  - [3. cd](#3-cd)
+    - [Description:](#description-2)
+    - [Usage:](#usage-2)
+  - [4. mkdir](#4-mkdir)
+    - [Description:](#description-3)
+    - [Usage:](#usage-3)
+  - [5. touch](#5-touch)
+    - [Description:](#description-4)
+    - [Usage:](#usage-4)
+  - [6. cp](#6-cp)
+    - [Description:](#description-5)
+    - [Usage:](#usage-5)
+  - [7. mv](#7-mv)
+    - [Description:](#description-6)
+    - [Usage:](#usage-6)
+  - [8. rm](#8-rm)
+    - [Description:](#description-7)
+    - [Usage:](#usage-7)
+  - [9. cat](#9-cat)
+    - [Description:](#description-8)
+    - [Usage:](#usage-8)
+  - [10. echo](#10-echo)
+    - [Description:](#description-9)
+    - [Usage:](#usage-9)
+  - [11. grep](#11-grep)
+    - [Description:](#description-10)
+    - [Usage:](#usage-10)
+  - [12. man](#12-man)
+    - [Description:](#description-11)
+    - [Usage:](#usage-11)
+  - [13. chmod](#13-chmod)
+    - [Description:](#description-12)
+    - [Usage:](#usage-12)
+  - [14. sudo](#14-sudo)
+    - [Description:](#description-13)
+    - [Usage:](#usage-13)
+  - [15. exit](#15-exit)
+    - [Description:](#description-14)
+    - [Usage:](#usage-14)
+
+---
 
 ### Description:
 

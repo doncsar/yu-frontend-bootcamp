@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ajax 2 - local JSON</title>
+   </head>
+   <body>
+      <button id="button1">Get User</button>
+      <button id="button2">Get Users</button>
+      <h1>User</h1>
+      <div id="user"></div>
+      <h1>Users</h1>
+      <div id="users"></div>
+
+      <script>
+         const loadUser = () => {
+            const xhr = new XMLHttpRequest()
+
+            xhr.open('GET', 'user.json', true)
+
+            xhr.onload = () => {
+               if (xhr.status == 200) {
+                  const response = JSON.parse(xhr.responseText)
+
+                  document.getElementById('user').innerText = `User nº${response.id} is named '${response.name}' and his email is ${response.email}`
+               }
+            }
+            xhr.onerror = () => {
+               console.log('Something went wrong')
+            }
+
+            xhr.send()
+         }
+
+         const loadUsers = () => {
+            const xhr = new XMLHttpRequest()
+
+            xhr.open('GET', 'users.json', true)
+
+            xhr.onload = () => {
+               if (xhr.status == 200) {
+                  const users = JSON.parse(xhr.responseText)
+
+                  const usersList = users.map(user => {
+                     return `<li>User nº${user.id} is named '${user.name}' and his email is ${user.email}</li>`
+                  }).join('')
+
+                  document.getElementById('users').innerHTML = '<ul>'+usersList+'</ul>'
+               }
+            }
+            xhr.onerror = () => {
+               console.log('Something went wrong')
+            }
+
+            xhr.send()
+         }
+
+         document.getElementById('button1').addEventListener('click', loadUser)
+
+         document.getElementById('button2').addEventListener('click', loadUsers)
+      </script>
+   </body>
+</html>
