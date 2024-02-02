@@ -1,0 +1,19 @@
+{
+   "name": "bonus-nodejs-crash-course",
+   "version": "0.1.0",
+   "description": "node crash course with Traversy media",
+   "main": "index.js",
+   "type": "module",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js",
+      "dev": "npx nodemon index"
+   },
+   "keywords": [],
+   "author": "Cesar Henrique <cesa_h_carvalho@gmail.com>",
+   "license": "MIT",
+   "dependencies": {
+      "express.js": "^1.0.0",
+      "uuid": "^9.0.1"
+   }
+}

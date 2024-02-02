@@ -1,0 +1,91 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Main content styles */
+main {
+  padding: 20px 0;
+}
+
+/* Section styles */
+section {
+  margin-bottom: 20px;
+}
+
+/* Heading styles */
+h1, h2, h3 {
+  color: #fff;
+}
+
+/* Link styles */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #666;
+}
+
+/* Responsive styles for tablets and smartphones */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  header {
+    font-size: 24px;
+  }
+  
+  .button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    font-size: 20px;
+  }
+  
+  .button {
+    font-size: 12px;
+  }
+}
